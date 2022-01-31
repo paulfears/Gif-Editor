@@ -1,0 +1,144 @@
+.canvas_size_dialog{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	color: white;
+	background-color: black;
+	z-index: 99999999999;
+	align-content: center;
+	text-align: center;
+}
+
+.gif_generation_dialog{
+	position: fixed;
+	z-index: 99999999997;
+	width: 100%;
+	height: 100%;
+	color: white;
+	background-color: black;
+	align-content: center;
+	text-align: center;
+	display: none;
+
+
+}
+.edit_sprite_pane{
+	position: relative;
+	z-index: 999999999999;
+	width: 100%;
+	height: 100%;
+	color: black;
+
+	background-color: white;
+	align-content: center;
+	text-align: center;
+	display: block;
+}
+
+
+#open_edit_image_button{
+	color: black;
+	border-color: black;
+}
+
+.canvas_size_dialog *{
+	text-align: center;
+}
+
+.horizontal *{
+	display: inline-block;
+}
+
+.gif_viewer{
+	text-align: center;
+	background-color: black;
+	position: absolute;
+	color: white;
+	width: 100%;
+	height: 100%;
+	align-self: center;
+	z-index: 99999999998;
+	margin: 0px;
+	display: none;
+	align-content: center;
+}
+
+.gif_viewer .row *{
+	display: inline-block;
+}
+#exit_viewer{
+	/*
+	border-radius: 100%;
+	background-color: red;
+	height: calc(100vw/40);
+	width: calc(100vw/40);
+	*/
+	margin-left: 20px;
+}
+
+.horizontal_box{
+	display: inline-block;
+}
+
+.horizontal_box *{
+	float: left;
+}
+
+.imgbox{
+	width: 80%;
+	margin-left: auto;
+    margin-right: auto;
+	align-content: center;
+	align-self: center;
+	text-align: center;
+}
+.imgbox img{
+	width:20%;
+	height: auto;
+}
+
+.progress-display{
+	display: none;
+	background-color: black;
+
+	width: 100%;
+	height: 100%;
+	z-index: 999999999999;
+	text-align: center;
+	align-self: center;
+	align-content: center;
+	vertical-align: center;
+	position: absolute;
+
+}
+
+.loader {
+  display: inherit;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #01FE13;
+  align-self: center;
+  text-align: center;
+  align-content: center;
+  left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+
+  width: 130px;
+  height: 130px;
+  -webkit-animation: spin 2s linear infinite; 
+  animation: spin 2s linear infinite;
+}
+
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

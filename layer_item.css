@@ -1,0 +1,40 @@
+.layer_disp{
+  width:80%;
+  height:25px;
+  /*background-color:#555;*/
+  padding:5px;
+  margin-bottom: 5px;
+
+  display:flex;
+  flex-direction: row;
+  border-radius:8px;
+  align-items: center;
+  margin-left: 5px;
+  border: 1px solid white;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.layer_disp:hover{
+  margin-left: 1px;
+}
+.layer_disp button{
+  cursor: pointer;
+  flex-grow:2;
+  font-size: 9px;
+  background-color: white;
+  padding:5px;
+  text-decoration: none;
+  border: none;
+  color: black;
+  /*border: 2px solid cyan;*/
+  border-radius: 8px 0px 0px 8px;
+  
+}
+.layer_disp img{
+  flex-grow:0;
+  width: 25%;
+  height: auto;
+  padding: 5px;
+  cursor: pointer;
+  
+}

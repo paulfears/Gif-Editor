@@ -1,0 +1,64 @@
+.toolbar {
+    position: absolute;
+    background-color: #f1f1f1;
+    text-align: center;
+    border: 1px solid #d3d3d3;
+    
+    left: 300px;
+    top: 300px;
+    display: none;
+    z-index: 2001;
+}
+.toolbar .switch_component{
+  display: none;
+}
+.toolbarheader {
+    position: relative;
+    padding: 10px 0px;
+    cursor: move;
+    background-color: #2196F3;
+    color: #fff;
+    width:100%;
+    display: block;
+    z-index: 2001;
+}
+.toolbarheader *{
+  
+  display:inline;
+}
+.exit_icon{
+  position:absolute;
+  border: 1px solid white;
+  top:0;
+  right:0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color:black;
+  color: white;
+  padding: 0px 5px;
+  text-align:right;
+  cursor:pointer;
+}
+/*
+.toolbar button{
+position: relative;
+width:100%;
+height:30px;
+cursor:pointer;
+}
+*/
+.tool_item{
+	display: flex;
+  background-color: #aaa;
+  border: 1px solid white;
+}
+.tool_item button{
+  width:100%;
+  cursor: pointer;
+}
+.tool_item img{
+	width:20px;
+  height:20px;
+}
+.item_options{
+  float: left;
+}

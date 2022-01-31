@@ -1,0 +1,245 @@
+body{
+align-content: center;
+
+background-color: #1B1E1F;
+
+
+margin: 0px;
+overflow: hidden;
+-webkit-user-select: none;
+-moz-user-select: -moz-none;
+-ms-user-select: none;
+user-select: none;
+}
+
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#overhead_toolbar{
+  display: none;
+}
+
+.sprite_edit_input{
+  border-color: black;
+  color: black;
+}
+
+#sprite_edit{
+  resize: both;
+  overflow: auto;
+}
+#sprite_edit canvas{
+  width: 100%;
+  height: 60%;
+}
+
+
+
+
+#overhead_toolbar *{
+  cursor: pointer;
+
+}
+
+
+.multiline_input{
+  width: 25%;
+  padding:10px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.canvas_container{
+  align-content: center;
+  background-image: url("images/transparent3.gif");
+  background-repeat: repeat;
+  grid-area: canvas_container;
+  padding-left:0px;
+  margin-left:0px;
+}
+#workspace{
+  background-color: #0000;
+  padding-left: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  border: solid black 1px;
+}
+
+#image_uploader{
+  display: none;
+}
+
+.title{
+  color: #39ff14;
+  grid-area: title;
+  grid-row-gap: 0px;
+  grid-column-gap: 0px;
+  bottom: 0;
+  padding-left: 10px;
+  font-size: 1vw;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+
+#add_text{
+  background-color: white;
+}
+
+#image_adder{
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10%;
+  background-image: url('images/upload.png');
+  cursor: pointer;
+}
+
+#image_setter{
+  display:none;
+}
+
+#layer_bar{
+  grid-area: layer_bar;
+  height: 100%;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 8px;
+  margin-top: 0px;
+  margin-left: 15px;
+  padding-top: 0px;
+  align-content: center;
+  align-self: right;
+  text-align: center;
+  color: white;
+  max-height: 78vh;
+  overflow-y: hidden;
+}
+
+
+
+
+.icon_set{
+  align-content: center;
+  align-self: center;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  width:100%;
+  border-radius: 8px;
+  padding: 2px;
+  margin-right:6px;
+}
+
+#layer_holder{
+  align-content: center;
+  text-align: center;
+  overflow-y: auto;
+  max-height: 80%;
+}
+
+.main{
+  width:100%;
+  display: grid;
+  grid-template-columns: 5% 84% 8%;
+  grid-column-gap: 6px;
+  grid-template-rows: 120px 100%;
+  grid-row-gap: 10px;
+  grid-template-areas:
+    "title frames-holder frame-controls"
+    "tool_bar canvas_container layer_bar"
+}
+.frame-controls{
+  grid-area: frame-controls;
+  text-align: right;
+  align-content: right;
+}
+
+.frame-controls button{
+  width: 80%;
+  height: 90%
+  margin-bottom: 2px;
+  font-size: 0.50vw;
+}
+
+.side_tool_bar{
+  grid-area: tool_bar;
+  align-content: center;
+  text-align: center;
+  border: 1px solid white;
+  padding:3px;
+  border-radius: 8px;
+  max-height: 80%;
+}
+.icon{
+  cursor:pointer;
+  width:22px;
+  height:22px;
+  color:white;
+  padding:2px 2px;
+  border:1px solid black;
+  background-color: white;
+  border-radius: 8px;
+
+}
+
+
+
+.property_window{
+  display: none;
+  position: fixed;
+  width:25%;
+  height:30%;
+}
+
+#to_be_cleared{
+  display: none;
+}
+#frames{
+  width: 1px;
+  height: 100%;
+  border: 1px solid black;
+  margin-bottom: 3px;
+}
+
+button{
+  padding: 10px;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  background-color: #0000;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.delete_option{
+  color: black;
+  border: 1px solid black;
+}
+
+
+.pair{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+.pair input{
+  width: 25%;
+  height: 50%;
+}
+#output_image{
+  display: none;
+  align-self: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+#output_video{
+  display: none;
+  align-self: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
